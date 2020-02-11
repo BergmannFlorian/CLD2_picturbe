@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Picture;
 use Illuminate\Http\Request;
 use App\Http\Requests\PictureRequest;
+use Storage;
+use Str;
 
 class PictureController extends Controller
 {
@@ -39,7 +41,7 @@ class PictureController extends Controller
     {
         $picture = new Picture();
 
-        $path = $request->picture->store('pictures');
+        $path = $request->picture->store('pictures', 's3');
 
         $picture->title = $request->title;
         $picture->storage_path = $path;
@@ -56,8 +58,8 @@ class PictureController extends Controller
      */
     public function show(Picture $picture, Request $request)
     {
-        if(\Str::startsWith($request->header('Accept'), 'image')){
-            return \Storage::get($picture->storage_path);
+        if(Str::startsWith($request->header('Accept'), 'image')){
+            return redirect(Storage::disk('s3')->temporaryUrl($picture->storage_path, now()->addMinutes(1)));
         }
         return view('pictures.show', compact('picture'));
     }
@@ -93,6 +95,8 @@ class PictureController extends Controller
      */
     public function destroy(Picture $picture)
     {
-        //
+        Storage::disk('s3')->delete($picture->storage_path);
+        $picture->delete();
+        return redirect()->route('pictures.index');
     }
 }
