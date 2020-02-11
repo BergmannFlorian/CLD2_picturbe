@@ -36,8 +36,15 @@ class PictureController extends Controller
      */
     public function store(PictureRequest $request)
     {
-        
-        //
+        $picture = new Picture();
+
+        $path = $request->picture->store('pictures');
+
+        $picture->title = $request->title;
+        $picture->storage_path = $path;
+        $picture->save();
+
+        return view('pictures.create');
     }
 
     /**
