@@ -44,18 +44,21 @@ class PictureController extends Controller
         $picture->storage_path = $path;
         $picture->save();
 
-        return view('pictures.create');
+        return redirect()->route('pictures.show', $picture->id);
     }
-
+    
     /**
      * Display the specified resource.
      *
      * @param  \App\Picture  $picture
      * @return \Illuminate\Http\Response
      */
-    public function show(Picture $picture)
+    public function show(Picture $picture, Request $request)
     {
-        //
+        if(\Str::startsWith($request->header('Accept'), 'image')){
+            return \Storage::get($picture->storage_path);
+        }
+        return view('pictures.show', compact('picture'));
     }
 
     /**
