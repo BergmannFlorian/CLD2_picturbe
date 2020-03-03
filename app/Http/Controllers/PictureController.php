@@ -6,6 +6,8 @@ use App\Picture;
 use Illuminate\Http\Request;
 use App\Http\Requests\PictureRequest;
 use Storage;
+use Aws\S3\PostObjectV4;
+use Aws\S3\S3Client;
 use Str;
 
 class PictureController extends Controller
@@ -28,9 +30,28 @@ class PictureController extends Controller
      */
     public function create()
     {
-        return view('pictures.create');
-    }
+        $client = new S3Client([
+            'version' => 'latest', 
+            'region' => env('AWS_DEFAULT_REGION'),
+        ]);
+        $bucket = env('AWS_BUCKET');
+        $key = 'pictures/'.Str::random(40);
+        $formInputs = ['acl' => 'private', 'key' => $key];
+        $options = [
+            ['acl' => 'private'], 
+            ['bucket' => $bucket], 
+            ['eq', '$key', $key],
+        ];
+        $expires = '+1 hours';
 
+        $postObject = new PostObjectV4($client, $bucket, $formInputs, $options, $expires);
+    
+        $formAttributes = $postObject->getFormAttributes();
+        $formInputs = $postObject->getFormInputs();
+
+        return view('pictures.create', compact('formAttributes', 'formInputs'));
+    }
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -40,14 +61,12 @@ class PictureController extends Controller
     public function store(PictureRequest $request)
     {
         $picture = new Picture();
-
-        $path = $request->picture->store('pictures', 's3');
-
+        
         $picture->title = $request->title;
-        $picture->storage_path = $path;
+        $picture->storage_path = $request->storage_path;
         $picture->save();
-
-        return redirect()->route('pictures.show', $picture->id);
+        
+        return redirect()->route('pictures.show', $picture);
     }
     
     /**
