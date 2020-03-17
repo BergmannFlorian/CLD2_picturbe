@@ -26,7 +26,7 @@ task :copy_dotenv do
     end
 end
 
-after 'composer:run', 'laravel:migrate'
+after 'copy_dotenv', 'laravel:migrate'
 
 # server-based syntax
 # ======================
