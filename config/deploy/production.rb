@@ -1,3 +1,14 @@
+
+
+set :deploy_to, "/home/cld2_8/cld2-8.mycpnv.ch"
+server "cld2-8.mycpnv.ch", user: "cld2_8"
+
+set :ssh_options, {
+    keys: %w(config/swisscenter_cld2_8_rsa),
+    forward_agent: false,
+    auth_methods: %w(publickey)
+}
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.

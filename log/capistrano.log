@@ -1,0 +1,121 @@
+# Logfile created on 2020-03-17 09:20:11 +0100 by logger.rb/v1.4.2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:20:11 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [15e0e708] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [15e0e708] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:25:00 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4ad8fd50] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [4ad8fd50] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:27:52 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [736bee76] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [736bee76] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:29:12 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [1969d238] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [1969d238] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:30:40 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [eead319f] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [eead319f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:35:16 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8c64a8db] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [8c64a8db] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:42:13 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [037671ff] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [037671ff] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:45:05 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [cb05c312] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [cb05c312] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-03-17 09:46:16 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [78698a7e] Running /usr/bin/env mkdir -p /tmp as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [78698a7e] Command: /usr/bin/env mkdir -p /tmp
+  INFO [78698a7e] Finished in 0.293 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-picturbe-production-flobe.sh 0.0%
+  INFO Uploading /tmp/git-ssh-picturbe-production-flobe.sh 100.0%
+  INFO [1c441b0d] Running /usr/bin/env chmod 700 /tmp/git-ssh-picturbe-production-flobe.sh as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [1c441b0d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-picturbe-production-flobe.sh
+  INFO [1c441b0d] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [9c087419] Running /usr/bin/env git ls-remote https://github.com/BergmannFlorian/CLD2_picturbe.git HEAD as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [9c087419] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-picturbe-production-flobe.sh" ; /usr/bin/env git ls-remote https://github.com/BergmannFlorian/CLD2_picturbe.git HEAD )
+ DEBUG [9c087419] 	2560088bd534474bf21a0b944b89f90d8340ed6f	HEAD
+  INFO [9c087419] Finished in 0.669 seconds with exit status 0 (successful).
+  INFO [5266d9b0] Running /usr/bin/env mkdir -p /home/cld2_8/cld2-8.mycpnv.ch/shared /home/cld2_8/cld2-8.mycpnv.ch/releases as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [5266d9b0] Command: /usr/bin/env mkdir -p /home/cld2_8/cld2-8.mycpnv.ch/shared /home/cld2_8/cld2-8.mycpnv.ch/releases
+  INFO [5266d9b0] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [f22bfdfb] Running [ -f /home/cld2_8/cld2-8.mycpnv.ch/current/REVISION ] as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [f22bfdfb] Command: [ -f /home/cld2_8/cld2-8.mycpnv.ch/current/REVISION ]
+ DEBUG [f22bfdfb] Finished in 0.091 seconds with exit status 1 (failed).
+ DEBUG [8cd6b530] Running [ -f /home/cld2_8/cld2-8.mycpnv.ch/repo/HEAD ] as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [8cd6b530] Command: [ -f /home/cld2_8/cld2-8.mycpnv.ch/repo/HEAD ]
+ DEBUG [8cd6b530] Finished in 0.080 seconds with exit status 1 (failed).
+ DEBUG [1ccb05e8] Running if test ! -d /home/cld2_8/cld2-8.mycpnv.ch; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch'" 1>&2; false; fi as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [1ccb05e8] Command: if test ! -d /home/cld2_8/cld2-8.mycpnv.ch; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch'" 1>&2; false; fi
+ DEBUG [1ccb05e8] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [8a1fe20f] Running /usr/bin/env git clone --mirror https://github.com/BergmannFlorian/CLD2_picturbe.git /home/cld2_8/cld2-8.mycpnv.ch/repo as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [8a1fe20f] Command: cd /home/cld2_8/cld2-8.mycpnv.ch && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-picturbe-production-flobe.sh" ; /usr/bin/env git clone --mirror https://github.com/BergmannFlorian/CLD2_picturbe.git /home/cld2_8/cld2-8.mycpnv.ch/repo )
+ DEBUG [8a1fe20f] 	warning: templates not found /usr/share/git-core/templates
+ DEBUG [8a1fe20f] 	Initialized empty Git repository in /home/cld2_8/cld2-8.mycpnv.ch/repo/
+  INFO [8a1fe20f] Finished in 1.244 seconds with exit status 0 (successful).
+ DEBUG [438c41a4] Running if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/repo; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/repo'" 1>&2; false; fi as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [438c41a4] Command: if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/repo; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [438c41a4] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [c1067239] Running /usr/bin/env git remote set-url origin https://github.com/BergmannFlorian/CLD2_picturbe.git as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [c1067239] Command: cd /home/cld2_8/cld2-8.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-picturbe-production-flobe.sh" ; /usr/bin/env git remote set-url origin https://github.com/BergmannFlorian/CLD2_picturbe.git )
+  INFO [c1067239] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [b0e36fd3] Running /usr/bin/env git remote update --prune as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [b0e36fd3] Command: cd /home/cld2_8/cld2-8.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-picturbe-production-flobe.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b0e36fd3] 	Fetching origin
+  INFO [b0e36fd3] Finished in 0.484 seconds with exit status 0 (successful).
+ DEBUG [538f058c] Running if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/repo; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/repo'" 1>&2; false; fi as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [538f058c] Command: if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/repo; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [538f058c] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [69410ea7] Running /usr/bin/env mkdir -p /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617 as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [69410ea7] Command: cd /home/cld2_8/cld2-8.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-picturbe-production-flobe.sh" ; /usr/bin/env mkdir -p /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617 )
+  INFO [69410ea7] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [ed24acd6] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617 as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [ed24acd6] Command: cd /home/cld2_8/cld2-8.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-picturbe-production-flobe.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617 )
+  INFO [ed24acd6] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [f8c26773] Running if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/repo; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/repo'" 1>&2; false; fi as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [f8c26773] Command: if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/repo; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [f8c26773] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [0106911b] Running /usr/bin/env git rev-list --max-count=1 master as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [0106911b] Command: cd /home/cld2_8/cld2-8.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-picturbe-production-flobe.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [0106911b] 	2560088bd534474bf21a0b944b89f90d8340ed6f
+ DEBUG [0106911b] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [c06daf72] Running if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617'" 1>&2; false; fi as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [c06daf72] Command: if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617'" 1>&2; false; fi
+ DEBUG [c06daf72] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [ae22f052] Running /usr/bin/env echo "2560088bd534474bf21a0b944b89f90d8340ed6f" > REVISION as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [ae22f052] Command: cd /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617 && /usr/bin/env echo "2560088bd534474bf21a0b944b89f90d8340ed6f" > REVISION
+  INFO [ae22f052] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [083cb08f] Running /usr/bin/env ln -s /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617 /home/cld2_8/cld2-8.mycpnv.ch/releases/current as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [083cb08f] Command: /usr/bin/env ln -s /home/cld2_8/cld2-8.mycpnv.ch/releases/20200317084617 /home/cld2_8/cld2-8.mycpnv.ch/releases/current
+  INFO [083cb08f] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [5e560f80] Running /usr/bin/env mv /home/cld2_8/cld2-8.mycpnv.ch/releases/current /home/cld2_8/cld2-8.mycpnv.ch as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [5e560f80] Command: /usr/bin/env mv /home/cld2_8/cld2-8.mycpnv.ch/releases/current /home/cld2_8/cld2-8.mycpnv.ch
+  INFO [5e560f80] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [f836b5ac] Running /usr/bin/env ls -x /home/cld2_8/cld2-8.mycpnv.ch/releases as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [f836b5ac] Command: /usr/bin/env ls -x /home/cld2_8/cld2-8.mycpnv.ch/releases
+ DEBUG [f836b5ac] 	20200317084617
+ DEBUG [f836b5ac] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [15ada534] Running if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/releases; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/releases'" 1>&2; false; fi as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [15ada534] Command: if test ! -d /home/cld2_8/cld2-8.mycpnv.ch/releases; then echo "Directory does not exist '/home/cld2_8/cld2-8.mycpnv.ch/releases'" 1>&2; false; fi
+ DEBUG [15ada534] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [14c53adf] Running /usr/bin/env echo "Branch master (at 2560088bd534474bf21a0b944b89f90d8340ed6f) deployed as release 20200317084617 by flobe" >> /home/cld2_8/cld2-8.mycpnv.ch/revisions.log as cld2_8@cld2-8.mycpnv.ch
+ DEBUG [14c53adf] Command: cd /home/cld2_8/cld2-8.mycpnv.ch/releases && /usr/bin/env echo "Branch master (at 2560088bd534474bf21a0b944b89f90d8340ed6f) deployed as release 20200317084617 by flobe" >> /home/cld2_8/cld2-8.mycpnv.ch/revisions.log
+  INFO [14c53adf] Finished in 0.088 seconds with exit status 0 (successful).

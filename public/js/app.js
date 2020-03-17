@@ -19335,8 +19335,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Exercices\cld2_clous_computing\picturbe\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Exercices\cld2_clous_computing\picturbe\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\git\CLD2_picturbe\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\git\CLD2_picturbe\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
