@@ -18,7 +18,7 @@ Install (Heroku)[https://cli-assets.heroku.com/heroku-x64.exe]
 
     git push heroku master
 
-Create file `Pocfile` at base on project
+Create file `Procfile` at base on project
 
     composer update
 
@@ -45,4 +45,8 @@ Set in config/database.php
             'schema' => 'public',
             'sslmode' => 'require',
         ],
+
+commit change on master
+
+    heroku run php artisan migrate
 
